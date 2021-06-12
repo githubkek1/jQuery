@@ -1,0 +1,28 @@
+<html>
+
+<head>
+		<title>JAVSCRIPT</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+	
+<body>
+
+<center><h1>jQuery</h1></center>
+<center><button id = "1">dugme1</button></center>
+<center><button id = "2">dugme1</button></center>
+</body>
+
+
+</html>
+
+<script>
+$(document).ready(function(){
+
+  // jQuery methods go here...
+	$('button').click(function(){
+		$('h1').css('color','green');
+	});
+});
+</script>
