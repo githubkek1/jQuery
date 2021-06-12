@@ -11,7 +11,7 @@
 
 <center><h1>jQuery</h1></center>
 <center><button id = "1">dugme1</button></center>
-<center><button id = "2">dugme1</button></center>
+<center><button id = "2">dugme2</button></center>
 </body>
 
 
@@ -20,9 +20,15 @@
 <script>
 $(document).ready(function(){
 
-  // jQuery methods go here...
-	$('button').click(function(){
+	$('#1').click(function(){
 		$('h1').css('color','green');
 	});
+
+	$('#2').click(function(){
+		$.get("nekifolder/osma.php", function(data){
+			$('h2').html('<center>'+data+'</center>');
+		});
+	});
+
 });
 </script>
